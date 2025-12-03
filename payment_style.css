@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f7fe;
+    color: #2b3674;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+}
+
+.text1 {
+    font-weight: 900;
+    font-size: 24px;
+    color: #2b3674;
+    letter-spacing: 1px;
+}
+
+.b1 {
+    border: 1px solid #4318ff;
+    color: #4318ff;
+    background: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#main_div {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1b2559;
+}
+
+.back_button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #2b3674;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.white_box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #2b3674;
+}
+
+select, input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #e0e5f2;
+    background: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+select {
+    background-color: #f9faff;
+}
+
+.gray_box {
+    background: #f9faff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 25px;
+}
+
+.flex_row {
+    display: flex;
+    gap: 20px;
+}
+
+.half {
+    flex: 1;
+}
+
+.blue_btn {
+    width: 100%;
+    background: #4318ff;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.gray_btn {
+    width: 100%;
+    background: #7c8db5;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#div2 {
+    display: none;
+}
