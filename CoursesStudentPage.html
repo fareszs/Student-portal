@@ -17,10 +17,7 @@
 
     <div class="card">
 
-        <div class="search-box">
-            <input type="text" placeholder="Search by name or code">
-        </div>
-
+    
         <table>
             <thead>
                 <tr>
@@ -64,7 +61,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.enroll-btn').forEach(function (btn) {
+               document.querySelectorAll('.enroll-btn').forEach(function (btn) {
                 btn.addEventListener('click', function () {
                     if (btn.classList.contains('enrolled')) return;
                     btn.classList.add('enrolled');

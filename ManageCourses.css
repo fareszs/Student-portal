@@ -134,7 +134,7 @@ body{
     color:white;
 }
 
-/* responsive */
+
 @media (max-width:800px){
     .header-inner,.container{padding:0 16px}
     .page-title{font-size:22px}
