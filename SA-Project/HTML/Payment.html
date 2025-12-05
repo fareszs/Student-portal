@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/payment_style.css">
+    <title>Payment</title>
+</head>
+<body>
+    <nav>
+        <h2>College Management System</h2>
+        <a href="login.html">
+            <button class="log-out"><b>Log Out</b></button>
+        </a>
+    </nav>
+    <div class="header">
+        <h1 class="header-state">Payments</h1>
+        <a href="student main page.HTML">
+            <button class="back"><h5>Back</h5></button>
+        </a>
+    </div>
+
+    <div id="main_div">
+        
+
+        <div class="white_box">
+            <label>Select Payment Method</label>
+            <select id="paymentSelect">
+                <option value="card">Credit Card</option>
+                <option value="cash">Cash</option>
+            </select>
+
+            <div id="div1" class="gray_box">
+                <label>Card Number</label>
+                <input type="text" placeholder="0000 0000 0000 0000">
+                <div class="flex_row">
+                    <div class="half">
+                        <label>Expiry Date</label>
+                        <input type="text" placeholder="MM/YY">
+                    </div>
+                    <div class="half">
+                        <label>CVC</label>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+            </div>
+
+            <div id="div2" class="gray_box">
+                <label>Receipt Number</label>
+                <input type="text" placeholder="Enter receipt #">
+            </div>
+
+            <button class="blue_btn">Confirm Payment</button>
+            <button class="gray_btn">Generate Receipt</button>
+        </div>
+    </div>
+
+    <script src="../JAVASCRIPT/payment_script.js"></script>
+</body>
+</html>

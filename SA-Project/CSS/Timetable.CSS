@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body{
+   background-color: #F4F7FE;
+   color: #2b3674;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   max-width: 1600px;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background: white;
+}
+
+
+.log-out{
+    width: 80px;
+    height: 30px;
+    border: #2b3674 solid;
+    border-radius: 15px;
+    color: #2b3674;
+    justify-content: center;
+    background-color: white;
+ }
+ 
+ .log-out:hover{
+    background-color: #2b3674;
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+    transition-duration: 0.8s;
+ }
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.header-state{
+    margin: 30px;
+    position: relative;
+    right: 45%;
+}
+
+
+.back{
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 30px;
+    left: 210%;
+    color: #2b3674;
+    top: 15px;
+}
+
+.back:hover{
+    cursor: pointer;
+    background-color: #2b3674;
+    color: #F4F7FE;
+    transition-duration: 0.5s;
+    transition-delay: 10ms;
+}
+
+
+.timetable{
+    width: 80%;
+    border: white solid;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    left: 10%;
+}
+
+.timetable th,
+.timetable td{
+    width: calc(90%/5);
+    height: 20px;
+    margin: 8px;
+    padding: 15px;   
+}
+
+.timetable td{
+    position: relative;
+    left: 7%;
+}

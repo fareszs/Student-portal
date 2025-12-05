@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/CoursesStudentPage.css">
+    <title>Enroll Courses</title>
+</head>
+ <body>
+
+    <nav>
+        <h2>College Management System</h2>
+        <a href="login.html">
+            <button class="log-out"><b>Log Out</b></button>
+        </a>
+    </nav>
+
+    <h1 class="page-title">View Courses / Enroll</h1>
+
+    <a href="student main page.HTML">
+        <button class="back"><h5>Back</h5></button>
+    </a>
+
+    <div class="card">
+
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Course Name</th>
+                    <th>Credits</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Pl2</td>
+                    <td>Programing language 2</td>
+                    <td>3</td>
+                    <td><button class="enroll-btn">Enroll</button></td>
+                </tr>
+                     <tr>
+                    <td>SA1</td>
+                    <td>System analysis 1</td>
+                    <td>3</td>
+                    <td><button class="enroll-btn">Enroll</button></td>
+                </tr>
+                     <tr>
+                    <td>MA1</td>
+                    <td>Mathematics 1</td>
+                    <td>3</td>
+                    <td><button class="enroll-btn">Enroll</button></td>
+                </tr>
+                     <tr>
+                    <td>HR</td>
+                    <td>HumanRights</td>
+                    <td>2</td>
+                    <td><button class="enroll-btn">Enroll</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+               document.querySelectorAll('.enroll-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    if (btn.classList.contains('enrolled')) return;
+                    btn.classList.add('enrolled');
+                    btn.textContent = 'Enrolled';
+                    btn.disabled = true;
+                    btn.setAttribute('aria-pressed', 'true');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

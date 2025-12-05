@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+  </head>
+<body>
+    <nav>
+        <h2>College Management System</h2>
+    </nav>
+  <div class="container section">
+    <div class="tabs">
+      <a href="#">Sign in</a>
+      <a href="Register.html">Register</a>
+    </div>
+    <div class="line1"></div>
+    <div class="all">
+      <form class="form"  onsubmit="checklogin(event)">
+        <div class="email">
+          <label>Username Or Email</label>
+          <input type="email" placeholder="example@example.com" required id="email" />
+        </div>
+        <div class="password">
+          <label>Password</label>
+          <input type="password" id="password" placeholder="Enter your Password" required />
+          <button id="btn-eye" type="button">
+            <i class="fa-solid fa-eye-slash icon"></i>
+          </button>
+        </div>
+        <div class="remember-forgot">
+          <label class="remember-label"><input type="checkbox" />Keep me signed in</label>
+          <a href="#"
+            onclick="window.open('reset-password.html', 'ResetPassword', 'width=1550px,height=1920px'); return false;">
+            Forgot Your Password?</a>
+        </div>
+        <a href="student main page.HTML">
+          <button type="submit" class="login">
+            Login
+          </button>
+        </a>
+      </form>
+    </div>
+    
+  </div>
+  <script src="../JAVASCRIPT/login.js"></script>
+</body>
+
+</html>

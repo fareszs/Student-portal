@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body{
+   background-color: #F4F7FE;
+   color: #2b3674;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   max-width: 1600px;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background: white;
+}
+
+
+.log-out{
+    width: 80px;
+    height: 30px;
+    border: #2b3674 solid;
+    border-radius: 15px;
+    color: #2b3674;
+    justify-content: center;
+    background-color: white;
+ }
+ 
+ .log-out:hover{
+    background-color: #2b3674;
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+    transition-duration: 0.8s;
+ }
+.page-title {
+    margin-left: 15%;
+    position: relative;
+    top: 8%;
+}
+.back{
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 8px;
+    left: 75%;
+    color: #2b3674;
+    top: 18px;
+}
+
+.back:hover{
+    cursor: pointer;
+    background-color: #2b3674;
+    color: #F4F7FE;
+    transition-duration: 0.5s;
+    transition-delay: 10ms;
+}
+.card {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    text-align: left;
+    padding: 12px 0;
+    color: #555;
+}
+table td {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    color: #444;
+}
+.enroll-btn {
+    background: #5D3BFF;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.enroll-btn:hover {
+    background: #472bd1;
+}
+
+.enroll-btn.enrolled {
+    background: #d9534f;
+    color: #fff;
+    cursor: default;
+    box-shadow: none;
+}
+.enroll-btn.enrolled:hover {
+    background: #d9534f;
+}
+.enroll-btn:disabled {
+    opacity: 0.9;
+    cursor: default;
+}

@@ -1,0 +1,214 @@
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', sans-serif;
+}
+
+
+body{
+    background-color: #F4F7FE;
+    color: #2b3674;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+}
+
+
+.log-out{
+    width: 80px;
+    height: 30px;
+    border: #2b3674 solid;
+    border-radius: 15px;
+    color: #2b3674;
+    justify-content: center;
+    background-color: white;
+ }
+ 
+ .log-out:hover{
+    background-color: #2b3674;
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+    transition-duration: 0.8s;
+ }
+
+
+.welcome{
+    background-color: white;
+    width: 70%;
+    max-height: 120px;
+    margin: 20px 10px 10px 10px;
+    border: 1px white solid;
+    border-radius: 15px;
+    justify-content: center;
+    justify-self: center;
+}
+
+.state{
+    margin: 12px;
+    color: #A3AED0;
+}
+
+.welcome-state{
+    margin: 12px;
+    color: #2B3674;
+}
+
+.services{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile{
+    width: calc(95%/3);
+    height: 120px;
+    justify-self: flex-start;
+    margin: 30px 15px 15px 0px;
+    background-color: #4318FF;
+    border-radius: 15px;
+}
+
+.profile-state{
+    margin: 10px;
+    color: white;
+}
+
+.profile img{
+    position: relative;
+    left: 80%;
+    top: 20px;
+    background-color: #7B4DFF;
+    padding: 7px;
+    border-radius: 10px
+}
+.courses{
+    width: calc(95%/3);
+    height: 120px;
+    margin: 30px 15px 15px 0px;
+    background-color: #FF0080;
+    border-radius: 15px;
+}
+
+.courses-state{
+    margin: 10px;
+    color: white;
+}
+
+.courses img{
+    position: relative;
+    left: 80%;
+    top: 20px;
+    background-color: #FF56A5;
+    padding: 7px;
+    border-radius: 10px
+}
+
+.payment{
+    width: calc(95%/3);
+    height: 120px;
+    margin: 30px 0px 15px 0px;
+    background-color: #0aaa7f;
+    border-radius: 15px;
+}
+
+.payment-state{
+    margin: 10px;
+    color: white;
+}
+
+.payment img{
+    position: relative;
+    left: 80%;
+    top: 20px;
+    background-color: #05CD99;
+    padding: 7px;
+    border-radius: 10px
+}
+
+.grades{
+    width: calc(95%/3);
+    height: 120px;
+    margin: 30px 20px 15px 0px;
+    background-color: #f56e4c;
+    border-radius: 15px;
+}
+
+.grades-state{
+    margin: 10px;
+    color: white;
+}
+
+.grades img{
+    position: relative;
+    left: 80%;
+    top: 20px;
+    background-color: #FF9B44;
+    padding: 7px;
+    border-radius: 10px
+}
+.timetable{
+    width: calc(95%/3);
+    height: 120px;
+    margin: 30px 0px 15px 20px;
+    background-color: #b0c119;
+    border-radius: 15px;
+}
+
+.timetable-state{
+    margin: 10px;
+    color: white;
+}
+
+.timetable img{
+    position: relative;
+    left: 80%;
+    top: 20px;
+    background-color: #d6ec14;
+    padding: 7px;
+    border-radius: 10px
+}
+
+
+.profile:hover,
+.courses:hover,
+.grades:hover,
+.payment:hover,
+.timetable:hover{
+    cursor: pointer;
+    scale: 1.1;
+    opacity: 0.8;
+    transition-duration: 1s;
+    transition-delay: 20ms;
+    filter: blur();
+    img{
+        scale: 1.1;
+        opacity: 0.8;
+        transition-duration: 1s;
+        transition-delay: 20ms;
+        filter: blur();
+    }
+}
+
+
+.profile,
+.courses,
+.grades,
+.log-out,
+.payment,
+.timetable{
+    text-decoration: none;
+}

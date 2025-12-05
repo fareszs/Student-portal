@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body{
+   background-color: #F4F7FE;
+   color: #2b3674;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   max-width: 1600px;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background: white;
+}
+
+
+.log-out{
+    width: 80px;
+    height: 30px;
+    border: #2b3674 solid;
+    border-radius: 15px;
+    color: #2b3674;
+    justify-content: center;
+    background-color: white;
+ }
+ 
+ .log-out:hover{
+    background-color: #2b3674;
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+    transition-duration: 0.8s;
+ }
+
+#main_div {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.header-state{
+    margin: 30px;
+    position: relative;
+    left: 20%;
+}
+
+.back{
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: white;
+    border-radius: 15px;
+    position: relative;
+    margin: 30px;
+    left: 400%;
+    color: #2b3674;
+    top: 15px;
+}
+
+.back:hover{
+    cursor: pointer;
+    background-color: #2b3674;
+    color: #F4F7FE;
+    transition-duration: 0.5s;
+    transition-delay: 10ms;
+}
+
+.white_box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #2b3674;
+}
+
+select, input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #e0e5f2;
+    background: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+select {
+    background-color: #f9faff;
+}
+
+.gray_box {
+    background: #f9faff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 25px;
+}
+
+.flex_row {
+    display: flex;
+    gap: 20px;
+}
+
+.half {
+    flex: 1;
+}
+
+.blue_btn {
+    width: 100%;
+    background: #4318ff;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.gray_btn {
+    width: 100%;
+    background: #7c8db5;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#div2 {
+    display: none;
+}
