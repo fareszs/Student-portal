@@ -42,17 +42,22 @@ btnpass1.addEventListener("click", function () {
   }
 });
 
-function checklogin(event) {
+function checkRegister(event) {
   event.preventDefault();
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
+  const rePassword = document.getElementById('re-password').value;
+  if (password !== rePassword) {
+    alert('Passwords do not match!');
+    return;
+  }
   console.log('Email:', email);
   console.log('Password:', password);
-  alert('Login successful!');
+  console.log('Re-entered Password:', rePassword);
+  alert('Registration successful!');
   if (/\.admin\b/i.test(email)) {
-    window.location.href = "admin main page.HTML";
+    window.location.href = "admin-main-page.html";
 } else {
-    window.location.href = "student main page.HTML";
+    window.location.href = "student-main-page.html";
 }
-
 }

@@ -27,37 +27,17 @@ btn.addEventListener("click", function () {
     icon.classList.remove("fa-eye");
   }
 });
-const pass1 = document.getElementById("re-password");
-const btnpass1 = document.getElementById("btn-eye1");
-const icon1 = document.querySelector(".icon1");
-btnpass1.addEventListener("click", function () {
-  if (pass1.type === "password") {
-    pass1.type = "text";
-    icon1.classList.remove("fa-eye-slash");
-    icon1.classList.add("fa-eye");
-  } else {
-    pass1.type = "password";
-    icon1.classList.add("fa-eye-slash");
-    icon1.classList.remove("fa-eye");
-  }
-});
-
-function checkRegister(event) {
+function checklogin(event) {
   event.preventDefault();
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  const rePassword = document.getElementById('re-password').value;
-  if (password !== rePassword) {
-    alert('Passwords do not match!');
-    return;
-  }
   console.log('Email:', email);
   console.log('Password:', password);
-  console.log('Re-entered Password:', rePassword);
-  alert('Registration successful!');
+  alert('Login successful!');
   if (/\.admin\b/i.test(email)) {
-    window.location.href = "admin main page.HTML";
+    window.location.href = "admin-main-page.html";
 } else {
-    window.location.href = "student main page.HTML";
+    window.location.href = "student-main-page.html";
 }
+
 }
